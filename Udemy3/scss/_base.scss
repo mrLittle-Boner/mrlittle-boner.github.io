@@ -1,0 +1,62 @@
+// font-family: 'Nunito', sans-serif;
+// font-family: 'Josefin Sans', sans-serif;
+
+$primary-color:#c69963;
+$primary-color-dark:#B28451;
+
+$secondary-color:#101d2c;
+
+$color-grey-light-1:#f9f7f6;
+$color-grey-light-2:#aaa;
+
+$color-grey-dark-1:#54483A;
+$color-grey-dark-2:#6D5D4B;
+
+$font-primary: 'Nunito', sans-serif;
+$font-secondary: 'Josefin Sans', sans-serif;
+
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;   //10px/16px = 62.5% - 1rem = 10px
+        @media screen and (min-width: 1921px) {
+            font-size: 100%;
+        }
+        @media screen and (max-width:1200px) {
+            font-size: 50%;
+        }
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: 300;
+    color: $color-grey-dark-2;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 80vh min-content 40vw repeat(3,auto);
+    grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem,1fr) [center-start] repeat(8,[col-start] minmax(auto, 14rem) [col-end] )[center-end] minmax(6rem,1fr)[full-end];
+
+    @media screen and (max-width:1000px){
+        grid-template-rows: 50px 80vh min-content 40vw repeat(3, auto);
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(auto, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    }
+
+    @media screen and (max-width:800px){
+        // grid-template-rows: 50px 80vh min-content auto 55vw repeat(3, auto);
+        grid-template-rows: 50px calc(100vh - 50px) auto min-content auto 55vw repeat(3, auto);
+    }
+
+    @media screen and (max-width:450px){
+        grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 1fr [full-end];
+    }
+
+}
