@@ -164,22 +164,43 @@ main {
     flex-basis: 20%;
     flex-shrink: 0;
 }
+.navigation li {
+    position: relative;
+}
 
 .navigation a {
+    position: relative;
     padding: 20px 0 20px 60px;
     display: block;
     font-size: 18px;
+    z-index: 15;
     text-transform: uppercase;
     text-decoration: none;
     color: whitesmoke;
 }
+
+.navigation li::before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: teal;
+    transform: scaleY(0);
+    transition: transform .3s, width .6s cubic-bezier(1, 0, 0, 1) .3s;
+}
+
+.navigation li:hover::before {
+    transform: scaleY(1);
+    width: 100%;
+}
+
 .active {
     background-color: teal;
 }
 
-.navigation a:hover {
-    background-color: teal;
-}
 .rights {
     text-align: center;
     padding: 25px;
