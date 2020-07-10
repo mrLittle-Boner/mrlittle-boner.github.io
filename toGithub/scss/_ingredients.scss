@@ -1,0 +1,48 @@
+.ingredients {
+    background: url(../imgs/ingredients_bg.png) center/cover;
+    color: whitesmoke;
+    padding: 10rem 0;
+}
+
+.ingredients__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.ingredients__content {
+    width: 45.6%;
+    background-color: rgba(0, 0, 0, 0.67);
+    padding: 7.7rem 7rem;
+    padding-top: 7.7rem;
+    padding-bottom: 7.7rem;
+    margin-right: 40px;
+}
+
+.ingredients__heading{
+    @extend %main_heading;
+}
+
+.ingredients__decor {
+    margin-top: 1.4rem;
+}
+
+.ingredients__text {
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    font-family: $text-lato;
+    line-height: 1.5;
+}
+
+.ingredients__images {
+    margin-top: 6.5rem;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingredients__images-item {
+    border: 5px solid rgba(255, 255, 255, 0.09);
+    border-radius: 50%;
+    width: 33.3%;
+}
