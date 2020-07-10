@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="author" content="mr.LittleBoner">
+    <meta name="description" content="Delishky app for daily activeties, todo list, notes , philosophy , lifestyle">
+
+    <title>the Delishky || Never forget to "poyti na huy"</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/6049cc87c8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="welcome">Welcome to Delishky App</div>
+        <div class="wisdom">"Не имей сто рублей, а poshel na huy" &copy;Камфуций</div>
+    </header>
+
+    <main class="todos">
+        <h2 class="todos__name">My Delishky</h2>
+        <div class="todos__container">
+            <ul class="todos__list">
+                <li class="todos__item">
+                       Some example: Delishki #1
+                    <i class="far fa-trash-alt trashcan"></i>
+                </li>
+                <!-- <li class="todos__item">
+                    Delishki #2
+                    <i class="far fa-trash-alt trashcan"></i>
+                </li>
+                <li class="todos__item">
+                    Delishki #3
+                    <i class="far fa-trash-alt trashcan"></i>
+                </li> -->
+            </ul>
+        </div>
+
+        <form class="todos__add">
+            <label>Add a new Delishki in your list!</label>
+            <input type="text" placeholder="Add new Delishki" class="todos__text">
+            <input type="submit" class="todos__btn" value="Add">
+        </form>
+    </main>
+
+    <div class="time">
+        <span class="time__close">x</span>
+        <div class="time__date"></div>
+        <div class="time__clock"></div>
+    </div>
+
+    <i class="far fa-clock"></i>
+
+
+
+    <footer class="footer">
+        <div class="rights">&copy;All rights are idut na huy.</div>
+        <div class="author">All code by mr.LittleBoner</div>
+        <div class="cats">If u like cute Cats check <a href="#">here</a></div>
+        <div class="chillwave">If u like chillwave check <a href="#">here</div>
+    </footer>
+
+
+    <script src="times.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
