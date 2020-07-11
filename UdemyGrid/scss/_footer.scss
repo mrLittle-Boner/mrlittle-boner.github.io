@@ -1,0 +1,48 @@
+.footer {
+    background-color: $secondary-color;
+    font-size: 1.4rem;
+    grid-column: full-start / full-end ;
+    padding: 8rem;
+
+    @media screen and (max-width:450px){
+        padding: 3rem;
+    }
+}
+
+.nav-bottom {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width:985px) {
+        flex-direction: column;
+    }
+
+    &__item {
+        text-align: center;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            width: 100%;
+            display: block;
+            padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+            transition: all .3s ease-out;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.05);
+                transform: translateY(-3px);
+            }
+        }
+
+
+    }
+}
+
+.rights {
+    color: #aaa;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 6rem;
+}

@@ -1,0 +1,85 @@
+.realtors {
+    background-color: $secondary-color;
+    grid-column: col-start 7 / full-end;
+    font-family: $font-secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 3rem;
+
+    @media screen and (max-width:800px){
+        grid-column: 1 / full-end;
+        display: flex;
+        align-items: flex-end;
+        padding: 3rem;
+        position: relative;
+        justify-content: center;
+        height: 140px;
+        flex-direction: row;
+    }
+
+    @media screen and (max-width:600px){
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+
+    h3 {
+        text-transform: uppercase;
+        color: $primary-color;
+        font-size: 1.6rem;
+
+        @media screen and (max-width:800px){
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+            align-self: end;
+        }
+
+        @media screen and (max-width:600px){
+            position: unset;
+            align-self: auto;
+            transform: translateX(0);
+        }
+    }
+
+}
+
+.realtor {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 21rem;
+    margin-top: 4.2rem;
+
+    @media screen and (max-width:1200px) {
+        width: 180px;
+    }
+
+    @media screen and (max-width:800px) {
+        margin-bottom: 0;
+    }
+
+    &__img{
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+    }
+
+    &__info {
+        .name{
+            font-weight: 400;
+            font-size: 1.9rem;
+        }
+        .sold{
+            font-size: 1rem;
+            color: rgb(180, 180, 180);
+            text-transform: uppercase;
+        }
+    }
+
+}
