@@ -1,0 +1,47 @@
+.about {
+    background: url(../imgs/about_bg.png) center/cover;
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.about__review {
+    text-align: center;
+    padding: 10rem 0 10rem 11rem;
+    flex-basis: 43.2%;
+}
+
+.about__review-title {
+    @extend %main_heading;
+    color: $color-main;
+}
+
+.about__review-decor {
+    margin-top: 1.4rem;
+}
+
+.about__review-text {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-family: $text-lato;
+}
+
+.about__review-photo-inner {
+    width: 143px;
+    margin: 5rem auto 0;
+}
+
+.about__dish {
+    flex-basis: 50%;
+    display: flex;
+    margin-left: 1.5;
+    align-items: center;
+}
+
+.about__dish-img {
+    max-width: 100%;
+    max-height: 100%;
+}
