@@ -12,6 +12,9 @@ body {
     text-align: center;
     height: 100vh;
     background: rgba(13, 9, 68, 0.77);
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
 }
 
 .header,
@@ -31,7 +34,7 @@ body {
 }
 
 .main {
-    padding: 60px 10px;
+    padding: 60px 10px 100px;
 }
 
 .card ,
@@ -96,11 +99,4 @@ body {
 .card__temp {
     padding: 8px 0;
     font-size: 35px;   
-}
-
-.footer {
-    font-size: 22px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
