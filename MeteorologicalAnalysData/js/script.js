@@ -16,7 +16,7 @@ const getInfo =  async (city) => {
         throw new Error('error in fetching data');
     }
     const aswer = await response.json();
-    console.log(aswer);
+
     return aswer;
 };
 
