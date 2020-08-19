@@ -10,7 +10,7 @@ html {
 
 body {
     text-align: center;
-    height: 100vh;
+    min-height:100vh;
     background: rgba(13, 9, 68, 0.77);
     flex-direction: column;
     justify-content: space-between;
