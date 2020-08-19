@@ -77,6 +77,7 @@ body {
     margin-bottom: 2px;
     border-radius: 5px;
     text-transform: capitalize;
+    word-break: break-all;
 }
 
 .todos__add {
