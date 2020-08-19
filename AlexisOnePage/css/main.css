@@ -165,13 +165,16 @@ html {
 
 .about__img-item {
     display: block;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 555px;
     height: 700px;
 }
 
 .about__content {
     position: relative;
+    height: -webkit-min-content;
+    height: -moz-min-content;
     height: min-content;
     transform: translate(-8%, 8%);
     background: #fff;
@@ -274,7 +277,8 @@ html {
     transform: translateY(-50px);
 }
 .gallery__item:hover .gallery__img {
-    filter:brightness(0.7);
+    -webkit-filter:brightness(0.7);
+            filter:brightness(0.7);
 }
 .gallery__item-wrapper {
     transition: all .3s ease;
@@ -288,7 +292,8 @@ html {
 .gallery__img {
     width: 100%;
     height: 290px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .services {
@@ -795,7 +800,8 @@ html {
 .testimonial__slider-img img {
    width: 384px;
    height: 399px;
-   object-fit: cover;
+   -o-object-fit: cover;
+      object-fit: cover;
 }
 .testimonial__slider-content {
     background-color: #fff;
@@ -967,7 +973,8 @@ li.slick-active {
 .blog__main-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .blog__figcap {
@@ -1153,6 +1160,26 @@ li.slick-active {
 
 .contact__btn:hover {
     transform: scale(1.2);
+}
+
+.contact__form-item::-webkit-input-placeholder, .contact__message::-webkit-input-placeholder {
+    text-align: center;
+    color: var(--text-color-light-gray);
+}
+
+.contact__form-item::-moz-placeholder, .contact__message::-moz-placeholder {
+    text-align: center;
+    color: var(--text-color-light-gray);
+}
+
+.contact__form-item:-ms-input-placeholder, .contact__message:-ms-input-placeholder {
+    text-align: center;
+    color: var(--text-color-light-gray);
+}
+
+.contact__form-item::-ms-input-placeholder, .contact__message::-ms-input-placeholder {
+    text-align: center;
+    color: var(--text-color-light-gray);
 }
 
 .contact__form-item::placeholder,
