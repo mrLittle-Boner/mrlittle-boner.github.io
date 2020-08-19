@@ -46,7 +46,7 @@ a {
 }
 
 .header {
-    background: url(./bg1.jpg) center/cover;
+    background: url(../pics/bg1.jpg) center/cover;
 }
 .header__content {
     width: 50%;
@@ -57,7 +57,7 @@ a {
     font-size: var(--text-medium);
 }
 .main {
-    background: url(./bg2.jpg) center/cover;
+    background: url(../pics/bg2.jpg) center/cover;
 }
 
 .works__list {
@@ -71,15 +71,20 @@ a {
     padding: 10px;
     width: 250px;
     height: 250px;
+    transition: all .3s ease;
+}
+.works__item:hover {
+    transform: scale(1.2);
 }
 .works__item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .footer {
-    background: url(./bg3.jpg) center/cover;
+    background: url(../pics/bg3.jpg) center/cover;
 }
 
 .footer__links {
