@@ -42,6 +42,7 @@ body {
     padding: 15px;
     background: #006561; 
     display: flex;
+    justify-content: space-around;
     color: #ffffff;
     width: 100%;
     position: absolute;

@@ -44,39 +44,39 @@ todoList.addEventListener('click', (e) => {
 
 // Folk wisdom functionality here
 
-const wisdoms = [
-    // "Не имей сто рублей, а poshel na huy",
-    "\"Сделал дело - ",
-    "\"Лучше синица в руке, чем ",
-    "\"Тише едешь, ",
-    "\"Не все то золото, что ",
-    "\"Выменял шило на мыло ",
-    "\"После драки ",
-    "\"Одна голова хорошо, а две ",
-    "\"В тихом омуте черти ",
-    "\"Муж и жена - ",
-    "\"И волки сыты, и овцы "
-];
+// const wisdoms = [
+//     // "Не имей сто рублей, а poshel na huy",
+//     "\"Сделал дело - ",
+//     "\"Лучше синица в руке, чем ",
+//     "\"Тише едешь, ",
+//     "\"Не все то золото, что ",
+//     "\"Выменял шило на мыло ",
+//     "\"После драки ",
+//     "\"Одна голова хорошо, а две ",
+//     "\"В тихом омуте черти ",
+//     "\"Муж и жена - ",
+//     "\"И волки сыты, и овцы "
+// ];
 
-let wisdomCounter = 0;
+// let wisdomCounter = 0;
 
-const tellWisdom = (arr) => {
+// const tellWisdom = (arr) => {
 
-    setInterval(function(){
-        if(wisdomCounter < 6 ) {
-            wisdom.textContent = (arr[wisdomCounter] + `poshel na huy" ${'\251'}Камфуций`);
-        } else {
-            wisdom.textContent = (arr[wisdomCounter] + `idut na huy" ${'\251'}Cтахтем`);
-        }
+//     setInterval(function(){
+//         if(wisdomCounter < 6 ) {
+//             wisdom.textContent = (arr[wisdomCounter] + `poshel na huy" ${'\251'}Камфуций`);
+//         } else {
+//             wisdom.textContent = (arr[wisdomCounter] + `idut na huy" ${'\251'}Cтахтем`);
+//         }
 
-        wisdomCounter++;
-        if (wisdomCounter >= 10) {
-            wisdomCounter = 0;
-        };
+//         wisdomCounter++;
+//         if (wisdomCounter >= 10) {
+//             wisdomCounter = 0;
+//         };
 
-    }, 10000);
+//     }, 10000);
 
-    return true;
-};
-tellWisdom(wisdoms);
+//     return true;
+// };
+// tellWisdom(wisdoms);
 

@@ -10,7 +10,7 @@ const time = () => {
     const options = {
         weekday:'short',
         year: 'numeric',
-        month: 'long',
+        month: 'short',
         day:'2-digit',
         hour:'2-digit',
         minute:'2-digit',
@@ -49,7 +49,7 @@ const time = () => {
             month = 'Сентябрь';
             break;
         case 9 :
-            month = 'Окттябрь';
+            month = 'Октябрь';
             break;
         case 10 :
             month = 'Ноябрь';
@@ -66,7 +66,7 @@ const time = () => {
 
     clock.innerHTML = time1;
     date.innerHTML = `${weekday} ${day} ${month} ${year}`;
-
+    console.log(today)
 };
 
 setInterval(time,1000);
@@ -75,7 +75,7 @@ timeBtn.addEventListener('click', (e) => {
     closeTime.parentElement.style.display = 'block';
 });
 
-closeTime.addEventListener('click', () => {
+closeTime.addEventListener('click', (e) => {
     closeTime.parentElement.style.display = 'none';
 });
 
