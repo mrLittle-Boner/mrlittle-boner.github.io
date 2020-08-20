@@ -12,7 +12,7 @@ const products = [
         weight : "0,5",
         cta : `Чего сидишь? Порадуй котэ, <span class="buy-btn">купи.</span>`,
         contains : "Печень утки разварная с артишоками",
-        disabledText : "Печалька с рыбой закончился"
+        disabledText : "Печалька c фуа-гра закончился"
     },
     {
         id : "el2",
@@ -40,7 +40,7 @@ const products = [
         weight : "5",
         cta : `Чего сидишь? Порадуй котэ, <span class="buy-btn">купи.</span>`,
         contains : "Филе из цыплят с трюфелями в бульоне.",
-        disabledText : "Печалька с рыбой закончился"
+        disabledText : "Печалька c курой закончился"
     }
 ];
 let htmlTemplate = '';
