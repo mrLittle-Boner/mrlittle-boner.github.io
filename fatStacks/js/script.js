@@ -86,6 +86,7 @@ moneyFormBtn.addEventListener("click", e => {
 
     calculateReport(moneyMoves);
     addToLocalStorage(moneyMoves);
+    document.location.reload();
 })
 
 takeFromLocalStorage(moneyMoves);
@@ -99,7 +100,7 @@ moneyItemDelete.forEach((el,index) => {
         render(moneyMoves);
         calculateReport(moneyMoves);
         addToLocalStorage(moneyMoves);
-        document.location.reload()
+        document.location.reload();
     })
 })
 
