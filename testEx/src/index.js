@@ -1,6 +1,7 @@
 import "./style/normolize.css";
 import "./style/base.css";
 import "./style/header.css";
+import "./style/mobile-header.css";
 import "./style/main.css";
 import "./style/brands.css";
 import "./style/providers-news.css";
