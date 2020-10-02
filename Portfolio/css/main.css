@@ -15,14 +15,18 @@ ul {
 body {
     text-align: center;
     background-color: #0A0333;
-    color: #FF00A8;
+    color: #b6e7e0;
+    background: url('https://cdn.spacetelescope.org/archives/images/screen/heic0611b.jpg') center/cover;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: 'Miriam Libre', sans-serif;
 }
 
 header, main, footer {
-    max-width: 1440px;
-    padding: 80px 0;
-    margin:0 auto;
-    text-shadow: 0px 0px 25px #FF00A8;
+    padding: 35px 0;
 }
  
 a {
@@ -31,46 +35,33 @@ a {
 }
 
 .container {
-    max-width: 1140px;
-    margin:0 auto;
+    padding: 0 25px;
 }
 
-.borders {
-    background-color: hsla(249, 89%, 11%, 0.5);
-    box-shadow: inset 0px 0px 25px 10px rgba(255, 0, 168, 0.25);
-    padding: 35px 0;
-}
+
 .heading {
     font-size: var(--text-big);
     margin-bottom: 30px;
 }
 
-.header {
-    background: url(../pics/bg1.jpg) center/cover;
-}
-.header__content {
-    width: 50%;
-    margin:0 auto;
-}
-
 .header__text {
     font-size: var(--text-medium);
 }
+
 .main {
-    background: url(../pics/bg2.jpg) center/cover;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
 }
 
 .works__list {
     display: flex;
-    justify-content: space-between;
-    padding: 35px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .works__item {
     padding: 10px;
-    width: 250px;
-    height: 250px;
+    width: 25%;
     transition: transform .3s ease;
     position: relative;
 }
@@ -104,13 +95,9 @@ a {
        object-fit: cover;
 }
 
-.footer {
-    background: url(../pics/bg3.jpg) center/cover;
-}
 
 .footer__links {
     display: flex;
-    min-height: 220px;
     flex-wrap: wrap;
     padding: 0 35px;
 }
@@ -132,29 +119,61 @@ a {
 .footer__links a:hover {
     transform: scale(1.15);
 }
+@media screen and (min-width:1920px) {
+    :root {
+        --text-big:50px;
+        --text-medium:35px;
+    }
+}
 
 @media screen and (max-width:1080px) {
-    .works__list {
-        justify-content: center;
-    }
-
     .works__item:hover {
         transform: scale(1);
     }
 }
 
 @media screen and (max-width:1024px) {
+    .works__item {
+        width: 45%;
+    }
     .works__item-descr {
         transform: scale(1);
-    }
+    }    
 
     .footer__links a:hover {
         transform: scale(1);
     }
 }
-@media screen and (max-width:1024px) {
-    .footer__links {
-        justify-content: center;
+
+@media screen and (max-width:700px) {
+    body {
+        padding: 0px 15px;
+    }
+    .works__item {
+        width: 80%;
+        height: 550px;
+    }
+    .footer__links li {
+        width: 100%;
     }
 }
 
+@media screen and (max-width:575px) {
+    
+    .works__item {
+        height: 420px;
+    }
+
+    :root {
+        --text-big:28px;
+        --text-medium:18px;
+    }
+
+}
+
+@media screen and (max-width:470px) {
+    
+    .works__item {
+        width: 100%;
+    }
+}
