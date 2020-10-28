@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: #c0c0c0;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: monospace;
+}
+
+.heading {
+    text-align: center;
+    padding: 40px 0;
+}
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+.money {
+    padding: 20px;
+    border: 2px solid #000;
+    background-color: #c0c0c0;
+}
+
+.money__report {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.money__report-income,
+.money__report-outcome {
+    width: 48%;
+    background: #fefefe;
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid transparent;
+}
+.money__report-income {
+    border-color: rgb(0, 255, 0);
+}
+.money__report-outcome {
+    border-color: red;
+}   
+.money__control {
+    padding: 10px;
+}
+.money__control-item {
+    padding: 5px;
+    background: #fefefe;
+    font-size: 20px;
+    display: flex;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.money__control-btn {
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top: -10px;
+    height: 13px;
+    width: 13px;
+    line-height: 0.5;
+    background-color: #ffffff;
+    right: -10px;
+    border: 1px solid red;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.money__control-move {
+    border-left: 1px solid #666;
+    padding-left: 15px;
+    text-align: right;
+    width: 35%;
+}
+.money__flow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.money__flow-descr,.money__flow-number {
+    width: 50%;
+    padding: 5px;
+}
+.money__flow-btn {
+    padding: 5px;
+    margin-top: 15px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 3px solid grey;
+    border-bottom: 3px solid grey;
+}
+
+.money__flow-btn:active {
+    transform: translateY(2px);
+}
+
+.money__balance {
+    padding: 10px 30px;
+    font-size: 26px;
+    width: fit-content;
+    margin: 0 auto;
+    background: #fefefe;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 2px solid transparent;
+}
+
+
+.income {
+    border: 2px solid rgb(0, 255, 0);
+}
+.outcome {
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.money__control-empty {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.money__clear {
+    padding: 7px;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 25px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 3px solid grey;
+    border-bottom: 3px solid grey;
+}    
+
+.money__clear:active {
+    transform: translateY(2px);
+}
