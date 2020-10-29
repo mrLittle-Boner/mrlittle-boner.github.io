@@ -1,0 +1,18 @@
+{
+  "name": "testaurant-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-sass": "node-sass scss/main.scss css/style2.css --output-style compressed",
+    "prefix" : "postcss ./css/style2.css --use autoprefixer -o ./css/final.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.8.5",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.1"
+  }
+}
